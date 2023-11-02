@@ -5,7 +5,7 @@ CREATE DATABASE work_db;
 USE work_db;
 
 
-CREATE TABLE deparments(
+CREATE TABLE deparment(
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(30)
 
@@ -18,11 +18,11 @@ CREATE TABLE role(
 
 );
 CREATE TABLE employee(
-    id INT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(30),
     last_name VARCHAR(30),
     role_id INT,
-    manager_id
+    manager_id INT
 
 );
 
